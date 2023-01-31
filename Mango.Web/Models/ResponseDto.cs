@@ -1,4 +1,4 @@
-﻿namespace Mango.Services.ProductAPI.Models.Dto
+﻿namespace Mango.Web.Models
 {
     public class ResponseDto
     {
