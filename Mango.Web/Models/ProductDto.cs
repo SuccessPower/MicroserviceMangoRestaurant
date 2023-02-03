@@ -11,6 +11,10 @@ namespace Mango.Web.Models
         public string CategoryName { get; set; }
         public string ImageUrl { get; set; }
 
+        public static implicit operator string(ProductDto v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 

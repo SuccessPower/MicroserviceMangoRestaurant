@@ -1,6 +1,10 @@
-﻿namespace Mango.Web.Services.IServices
+﻿using Mango.Web.Models;
+
+namespace Mango.Web.Services.IServices
 {
-    public class IBaseService
+    public interface IBaseService: IDisposable
     {
+        ResponseDto responseModel { get; set; }
+        Task<T> SendAsync<T>(ApiRequest apiRequest);
     }
 }
